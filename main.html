@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Example</title>
+</head>
+<body>
+<nav>
+	<a href="#/home/">首页</a>
+	<a href="#/tool/">工具页</a>
+    <a href="#/info/">详情页面</a>
+</nav>
+<div id="main">
+    <!-- templace -->
+</div>
+</body>
+<script src="dep/requirejs/require.js"></script>
+<script>
+    require.config({
+        baseUrl: 'asset',
+        paths : {
+            text: '../dep/requirejs-text/text',
+            router: '../dep/router/router'
+        },
+        pachages: []
+    });
+
+	require(['main']);
+    
+</script>
+</html>
